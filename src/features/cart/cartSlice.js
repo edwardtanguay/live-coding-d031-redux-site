@@ -11,6 +11,9 @@ export const cartSlice = createSlice({
 	reducers: {
 		addItem: (state, action) => {
 			state.items.push(action.payload);
+		},
+		changeCustomerName: (state, action) => {
+			state.customerName = action.payload;
 		}
 	}
 });
