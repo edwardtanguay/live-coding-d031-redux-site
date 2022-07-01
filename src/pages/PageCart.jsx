@@ -10,7 +10,7 @@ export const PageCart = () => {
 			<ul>
 				{items.map((item, i) => {
 					return (
-						<li key={i}>{item}</li>
+						<li key={i}>{item.title} - {item.price}</li>
 					)
 				})}
 			</ul>
